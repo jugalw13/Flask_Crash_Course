@@ -11,7 +11,9 @@ def add_item():
         s = TODO(text=text)
         db.session.add(s)
         db.session.commit()
-        return jsonify(text)
+        if s.id == None: 
+                return jsonify({"result: failure"})
+        return jsonify({"result":"success"})
 
 @app.route("/todo/get-list", methods=['GET'])
 def get_item():
