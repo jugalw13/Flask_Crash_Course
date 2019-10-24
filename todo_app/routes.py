@@ -30,9 +30,10 @@ def get_item():
     result = TODO.query.all()
     if result is None:
         return jsonify(f"error: Invalid ID: {id}")
-    d = [r.__str__() for r in result]
-    print(d)
-    return jsonify(d)
+    result = [r.__dict__ for r in result]
+    for i in result:
+        del i['_sa_instance_state']
+    return jsonify(result)
 
 @app.route("/todo/update-list", methods=['PUT'])
 def put_item():
