@@ -1,3 +1,5 @@
+import json
+
 from flask import current_app as app
 from flask import jsonify, request
 
@@ -25,17 +27,12 @@ def add_item():
 @app.route("/todo/get-list", methods=['GET'])
 def get_item():
     result = None
-    id = None
-    try:
-        data = request.get_json()
-        id = int(data['id'])
-        result = TODO.query.get(id)
-    except Exception:
-        pass
-    
+    result = TODO.query.all()
     if result is None:
         return jsonify(f"error: Invalid ID: {id}")
-    return jsonify(result.text)
+    d = [r.__str__() for r in result]
+    print(d)
+    return jsonify(d)
 
 @app.route("/todo/update-list", methods=['PUT'])
 def put_item():
