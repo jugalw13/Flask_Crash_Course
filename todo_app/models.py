@@ -7,4 +7,4 @@ class TODO(db.Model):
     text = db.Column(db.String(1024))
 
     def __repr__(self):
-        return '<TODO %r>' % self.text
+        return '<TODO: %r>' % self.text
