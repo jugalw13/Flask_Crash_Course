@@ -67,3 +67,5 @@
 22. [DELETE Request (Pretty Printed)](https://www.youtube.com/watch?v=I64c1L_Zl2Y&list=PLXmMXHVSvS-CoYS177-UvMAQYRfL3fBtX&index=4) - https://www.youtube.com/watch?v=I64c1L_Zl2Y&list=PLXmMXHVSvS-CoYS177-UvMAQYRfL3fBtX&index=4
 
 23. [Flask SQLAlchemy (Pretty Printed)](https://www.youtube.com/watch?v=jTiyt6W1Qpo) - https://www.youtube.com/watch?v=jTiyt6W1Qpo
+
+24. [Flask Detailed Tutorial (Corey Schafer)](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH) - https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH
